@@ -56,7 +56,7 @@ nav {
 .bar {
     width: 24px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     margin: 6px;
     transition: all .3s;
 }
@@ -385,7 +385,7 @@ nav {
 
 .contactContent .orAfter {
     display: none;
-    color: black;
+    color: white;
 }
 
 /* .otherContactOption {
