@@ -1,0 +1,478 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(#1289A7, #9980FA, #5758BB);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    flex-wrap: wrap;
+}
+
+.navLinks {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all .3s;
+    display: inline-block;
+    padding: 10px 12px;
+}
+
+.navLinks:hover {
+    color: black;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navContainer_smallScreen {
+    /* display: none; */
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    transition: all .3s;
+    text-align: center;
+}
+
+.bars {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bar {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    margin: 6px;
+    transition: all .3s;
+}
+.singleBar {
+    margin: 0 6px;
+    height: 1px;
+}
+.logo {
+    padding: 10px;
+}
+
+.logo1 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* background-color: grey; */
+    border: 1px solid rgba(10, 10, 250, .8);
+    border-radius: 50%;
+    animation: rotateAc 10s infinite;
+    animation-timing-function: linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoPlanets1 {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+.logo2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(20, 20, 20, .3);
+    border-radius: 50%;
+    animation: rotateC 3s infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoPlanets2 {
+    width: 5px;
+    height: 5px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 20px yellow;
+}
+
+@keyframes rotateAc {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateC {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+.devInfo {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    /* background-color: red; */
+    margin: 10px auto;
+}
+.devInfoContainer > div {
+    margin-bottom: 10px;
+    /* background-color: green; */
+}
+
+.intro {
+    font-size: 3em;
+}
+
+
+.intro2 {
+    font-size: 1.5em;
+}
+
+.options button {
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .3s;
+    /* margin-left: 10px; */
+    margin: 5px;
+}
+.options button:hover {
+    color: royalblue;
+    background-color: white;
+    border: 1px solid royalblue;
+}
+
+.devParaIntro {
+    /* background-color: yellow; */
+    width: 300px;
+    margin: 10px;
+}
+
+.devParaIntro p {
+    font-size: 1em;
+}
+
+.devInfoContainer {
+    text-align: right;
+    margin: 10px;
+    /* background-color: blue; */
+    /* width: 300px; */
+}
+
+.lineBetween {
+    width: 1px;
+    height: 200px;
+    background-color: white;
+    margin: auto 10px;
+}
+
+
+
+.devAbout {
+    width: 70%;
+    min-height: 70vh;
+    margin: 10px auto;
+}
+
+.aboutPack {
+    width: 80%;
+}
+
+.heading {
+    font-size: 1.5em;
+}
+
+.headingContainer {
+    display: flex;
+    align-items: center;
+}
+
+.lineAfter {
+    display: inline-block;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+    margin: auto 10px;
+}
+
+.aboutParagraph {
+    margin: 15px auto;
+}
+
+.aboutSkillSet ul {
+    padding: 20px;
+}
+
+
+.workContainer{
+    width: 70%;
+    /* height: 70vh; */
+    /* background-color: red; */
+    margin: 75px auto 10px auto;
+}
+
+.boxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: ; */
+}
+
+.appBox {
+    border: 1px solid royalblue;
+    background-color: rgb(255, 238, 191);
+    /* border-radius: 2px; */
+    width: 250px;
+    height: 180px;
+    position: relative;
+    transition: all .3s;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 250px;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appBox:hover .layer {
+    width: 250px;
+    height: 180px;
+    background-color: rgba(100, 100, 100, .5);
+}
+.appBox:hover .appName {
+    color: transparent;
+    height: 0px;
+}
+
+.layer button {
+    padding: 10px 12px;
+    margin: auto 8px;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.layer button:hover {
+    color: royalblue;
+    background-color: rgba(200, 200, 200, .8);
+    border: 1px solid royalblue;
+}
+
+.appInfo img {
+    width: 250px;
+    height: 180px;
+}
+
+.appName {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    bottom:0;
+    font-size: 1.4rem;
+    transition: all .3s;
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    background-image: linear-gradient(transparent, grey);
+}
+
+
+.contactMe {
+    width: 70%;
+    min-height: 70vh;
+    /* background-color: red; */
+    margin: 80px auto 20px;    
+    /* display: flex; */
+}
+
+.contactContent {
+    display: flex;
+    background-color: rgba(10, 10, 10, .3);
+    box-shadow: 1px 1px 4px black;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contactMe form {
+     /* background-color: royalblue; */
+    /* box-shadow: -2px -3px 10px white; */ 
+    padding: 10px;
+}
+
+.inputField input, .inputField textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 6px 8px;
+    resize: none;
+    resize: vertical;
+    border-bottom: 1px solid white;
+    width: 20vw;
+}
+
+.inputField input::placeholder, .inputField textarea::placeholder {
+    color: white;
+}
+
+
+.inputField {
+    margin: 20px auto;
+    /* background-color: yellow; */
+    /* padding: 5px; */
+}
+
+#submitBtn {
+    background-color: white;
+    color: black;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.contactContent .orAfter {
+    display: none;
+    color: black;
+}
+
+/* .otherContactOption {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.mailMe {
+    margin: 10px auto;
+    padding: 4px;
+    text-align: center;
+}
+.mailMe a {
+    font-size: 2rem;
+}
+
+#message {
+    overflow-wrap: break-word;
+}
+
+
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+}
+
+.tagline {
+    text-align: center;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.socialMedia a {
+    margin: 10px;
+    padding: 4px;
+    font-size: 2rem;
+}
+
+
+
+/* media query ahead // */
+
+
+@media screen and (max-width:800px) {
+
+    .navContainer {
+        display: none;
+    }
+    .bars {
+        display: flex;
+    }
+
+    .devInfo .lineBetween {
+        display: none;
+    }
+    .devInfo {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .devInfoContainer {
+        text-align: center;
+    }
+    .devParaIntro {
+        text-align: center;
+    }
+
+
+
+    
+    .contactContent .lineBetween {
+        display: none;
+    }
+    .contactContent .orAfter {
+        display: block;
+    
+    }
+    .contactContent {
+        flex-direction: column;
+    }
+}
+
+
+
+
