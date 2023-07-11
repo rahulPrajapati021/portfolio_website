@@ -141,12 +141,14 @@ function gameOver() {
 
     if((birdTop < gapTop || birdTop > (gapTop +160)) && (gapLeft > 0 && gapLeft < 80) ) {
         console.log("gameOver");
-        game.innerHTML = "Game Over";
+                document.getElementById("score").innerHTML = `Score = ${score}`;
+        game.innerHTML = "Game Over <button onclick='window.navigation.reload()'>Restart</button>";
+
     }
     else if(birdTop > 460 || birdTop < 0) {
         console.log("gameover")
-        game.innerHTML = "Game Over";
-
+                document.getElementById("score").innerHTML = `Score = ${score}`;
+        game.innerHTML = "Game Over <button onclick='window.navigation.reload()'>Restart</button>";
     }
 }
 
