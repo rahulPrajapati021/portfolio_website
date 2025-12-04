@@ -1,1 +1,43 @@
 @import "tailwindcss";
+/* Light theme defaults */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #2e2e2e;
+  --secondary-text: #cfcfcf;
+  --accent: #2563eb;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --text-secondary: #555;
+  --card-bg: #ffffff;
+  --card-border: #ddd;
+  --badge-bg: #f2f2f2;
+  --badge-border: #ccc;
+  --badge-text: #333;
+}
+/* Dark theme overrides */
+.dark {
+  --bg-color: #0d1117;
+  --text-color: #f0f6fc;
+  --secondary-text: #c9d1d9;
+  --accent: #58a6ff;
+  --bg: #0f0f0f;
+  --text: #f1f1f1;
+  --text-secondary: #cfcfcf;
+  --card-bg: #111821;
+  --card-border: #333;
+  --badge-bg: #222;
+  --badge-border: #444;
+  --badge-text: #eee;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* small utility for container */
+.container-custom {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
